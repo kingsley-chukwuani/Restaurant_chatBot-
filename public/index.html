@@ -12,6 +12,7 @@
         padding: 0;
         box-sizing: border-box;
         font-family: "Arial", sans-serif;
+        font-weight: 200;
       }
 
       body {
@@ -35,13 +36,13 @@
         background-color: #feeae6; /* light warm color */
         border-radius: 10px; /* rounded corners */
         padding: 20px;
-        display: flex;
+        display: none;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         width: 50%;
         height: 50vh;
-        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
 
         & div {
           display: flex;
@@ -96,7 +97,7 @@
 
         #mainMenu button {
           padding: 10px 20px;
-          background-color: #442c2e;
+          background-color: #54272b;
           color: #fedbd0;
           border: none;
           border-radius: 5px;
@@ -115,6 +116,7 @@
         }
       }
 
+      
       #chatMenu {
         position: relative;
         background-color: #feeae6; /* light warm color */
@@ -228,12 +230,55 @@
         }
       }
 
-      @media screen and (max-width: 600px) {
-  #mainMenu, #chatMenu {
-    width: 90%;
-    height: 90vh;
-  }
-}
+      /* Responsive CSS for tablets */
+      @media screen and (max-width: 768px) {
+        #mainMenu,
+        #chatMenu {
+          width: 80%;
+          height: 80vh;
+        }
+
+        #mainMenu h1,
+        #chatMenu h1 {
+          font-size: 2em;
+        }
+
+        #mainMenu input,
+        #chatMenu input {
+          padding: 8px;
+          width: 90%;
+        }
+
+        #mainMenu button,
+        #chatMenu button {
+          padding: 8px 16px;
+        }
+      }
+
+      /* Responsive CSS for mobile phones */
+      @media screen and (max-width: 480px) {
+        #mainMenu,
+        #chatMenu {
+          width: 95%;
+          height: 90vh;
+        }
+
+        #mainMenu h1,
+        #chatMenu h1 {
+          font-size: 1.5em;
+        }
+
+        #mainMenu input,
+        #chatMenu input {
+          padding: 6px;
+          width: 95%;
+        }
+
+        #mainMenu button,
+        #chatMenu button {
+          padding: 6px 12px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -241,6 +286,7 @@
       <h1>Welcome to Alexis Cuisine</h1>
       <input type="text" name="name" id="name" placeholder="" />
       <button disabled id="continueButton" type="submit">Continue</button>
+      
     </main>
     <script>
       const nameInput = document.getElementById("name");
