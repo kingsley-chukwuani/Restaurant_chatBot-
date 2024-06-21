@@ -11,8 +11,8 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Arial", sans-serif;
-        font-weight: 200;
+        font-family: sans-serif;
+        font-weight: 400;
       }
 
       body {
@@ -42,7 +42,7 @@
         flex-direction: column;
         width: 50%;
         height: 50vh;
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
 
         & div {
           display: flex;
@@ -116,7 +116,6 @@
         }
       }
 
-      
       #chatMenu {
         position: relative;
         background-color: #feeae6; /* light warm color */
@@ -257,10 +256,23 @@
 
       /* Responsive CSS for mobile phones */
       @media screen and (max-width: 480px) {
-        #mainMenu,
+        body {
+          font-weight: bold;
+        }
+
         #chatMenu {
           width: 95%;
           height: 90vh;
+        }
+
+        #mainMenu {
+          width: 95%;
+          height: 60vh;
+        }
+
+        #chatMenu::before {
+          width: 50px;
+          height: 50px;
         }
 
         #mainMenu h1,
@@ -286,7 +298,6 @@
       <h1>Welcome to Alexis Cuisine</h1>
       <input type="text" name="name" id="name" placeholder="" />
       <button disabled id="continueButton" type="submit">Continue</button>
-      
     </main>
     <script>
       const nameInput = document.getElementById("name");
