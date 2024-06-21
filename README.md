@@ -33,7 +33,7 @@ Restaurant Chat-Bot is a web-based chat application that allows users to interac
    ```
 
 ## Usage
-1. Open your browser and navigate to `https://alexis-cuisine.onrender.com`.
+1. Open your browser and navigate to `http://localhost:8000 `.
 2. Enter your username to start interacting with the virtual assistant.
 3. Use the chat interface to place orders and manage them.
 
