@@ -1,7 +1,7 @@
-# Alexis Cuisine
+# RESTAURANT CHAT-BOT
 
 ## Description
-Alexis Cuisine is a web-based chat application that allows users to interact with a virtual assistant for placing and managing food orders. The application uses Socket.IO for real-time communication between the client and server, and Node.js for server-side processing.
+Restaurant Chat-Bot is a web-based chat application that allows users to interact with a virtual assistant for placing and managing food orders. The application uses Socket.IO for real-time communication between the client and server, and Node.js for server-side processing.
 
 ## Features
 1. **User Authentication**: Users can enter their username and continue to the chat interface.
@@ -17,13 +17,11 @@ Alexis Cuisine is a web-based chat application that allows users to interact wit
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/kingsley-chukwuani /Restaurant_chatBot-
-.git
+   git clone https://github.com/kingsley-chukwuani /Restaurant_chatBot-.git
    ```
 2. Navigate to the project directory:
    ```bash
    cd Restaurant_chatBot
-
    ```
 3. Install dependencies:
    ```bash
